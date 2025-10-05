@@ -1,0 +1,54 @@
+[
+    {
+        "course_id": "DS2002",
+        "section": "001",
+        "title": "Data Science Systems",
+        "level": 2000,
+        "instructors": [
+            {
+                "name": "Austin Rivera",
+                "role": "Primary"
+            },
+            {
+                "name": "Heywood Williams-Tracy",
+                "role": "TA"
+            }
+        ]
+    },
+    {
+        "course_id": "BME3080",
+        "section": "001",
+        "title": "Biomedical Engineering Integrated Design and Experimental Analysis (IDEAS)",
+        "level": 3000,
+        "instructors": [
+            {
+                "name": "Allen",
+                "role": "Primary"
+            }
+        ]
+    },
+    {
+        "course_id": "BME3310",
+        "section": "001",
+        "title": "Biomechanics",
+        "level": 3000,
+        "instructors": [
+            {
+                "name": "Dr. Smith",
+                "role": "Primary"
+            }
+        ]
+    },
+    {
+        "course_id": "STS1500",
+        "section": "002",
+        "title": "Science, Technology, and Society",
+        "level": 1000,
+        "instructors": [
+            {
+                "name": "Prof. Johnson",
+                "role": "Primary"
+            }
+        ]
+    }
+]
