@@ -3,7 +3,7 @@
         "course_id": "DS2002",
         "section": "001",
         "title": "Data Science Systems",
-        "level": 2000,
+        "level": 200,
         "instructors": [
             {
                 "name": "Austin Rivera",
@@ -16,37 +16,61 @@
         ]
     },
     {
-        "course_id": "BME3080",
-        "section": "001",
-        "title": "Biomedical Engineering Integrated Design and Experimental Analysis (IDEAS)",
-        "level": 3000,
-        "instructors": [
-            {
-                "name": "Allen",
-                "role": "Primary"
-            }
-        ]
-    },
-    {
-        "course_id": "BME3310",
+        "course_id": "BME2220",
         "section": "001",
         "title": "Biomechanics",
-        "level": 3000,
+        "level": 300,
         "instructors": [
             {
-                "name": "Dr. Smith",
+                "name": "Natasha Sheybani",
                 "role": "Primary"
             }
         ]
     },
     {
-        "course_id": "STS1500",
-        "section": "002",
-        "title": "Science, Technology, and Society",
-        "level": 1000,
+        "course_id": "BME3080",
+        "section": "001",
+        "title": "IDEAS",
+        "level": 300,
         "instructors": [
             {
-                "name": "Prof. Johnson",
+                "name": "Tim Allen",
+                "role": "Primary"
+            }
+        ]
+    },
+    {
+        "course_id": "STS2600",
+        "section": "004",
+        "title": "Science, Technology, and Society",
+        "level": 300,
+        "instructors": [
+            {
+                "name": "Sergio Guillen",
+                "role": "Primary"
+            }
+        ]
+    },
+    {
+        "course_id": "BME4995",
+        "section": "001",
+        "title": "Research for Credit",
+        "level": 300,
+        "instructors": [
+            {
+                "name": "William Guilford",
+                "role": "Primary"
+            }
+        ]
+    },
+    {
+        "course_id": "BME2102",
+        "section": "001",
+        "title": "Physiology II",
+        "level": 300,
+        "instructors": [
+            {
+                "name": "Shannon Barker",
                 "role": "Primary"
             }
         ]
