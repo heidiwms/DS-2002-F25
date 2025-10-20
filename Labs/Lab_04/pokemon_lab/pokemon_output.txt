@@ -9,29 +9,16 @@ Test complete.
 --- Adding New Card Set ---
 Enter the TCG Card Set ID (e.g., base1, base4): base1
 Fetching data for Pokémon TCG Set: base1 ...
-
 --- Adding New Card Set ---
 Enter the TCG Card Set ID (e.g., base1, base4): base4
 Fetching data for Pokémon TCG Set: base4 ...
 
 --- Starting Portfolio Build Workflow ---
 Do you want to add a NEW card set? (yes/no)
-yes
-make[1]: Entering directory '/workspaces/DS-2002-F25/pokemon_lab'
---- Adding New Card Set ---
-Enter the TCG Card Set ID (e.g., base1, base4): base1
-Fetching data for Pokémon TCG Set: base1 ...
-make[1]: Leaving directory '/workspaces/DS-2002-F25/pokemon_lab'
-Card set added. Add another? (yes/no)
-yes
-make[1]: Entering directory '/workspaces/DS-2002-F25/pokemon_lab'
---- Adding New Card Set ---
-Enter the TCG Card Set ID (e.g., base1, base4): base4
-Fetching data for Pokémon TCG Set: base4 ...
-make[1]: Leaving directory '/workspaces/DS-2002-F25/pokemon_lab'
+no
 Do you want to refresh ALL existing card sets? (yes/no)
 yes
-make[1]: Entering directory '/workspaces/DS-2002-F25/pokemon_lab'
+make[1]: Entering directory '/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab'
 --- Refreshing All Card Sets ---
 Refreshing all card sets in card_set_lookup/...
 Updating set: base1 ...
@@ -39,19 +26,19 @@ Data written to card_set_lookup/base1.json
 Updating set: base4 ...
 Data written to card_set_lookup/base4.json
 All card sets have been refreshed.
-make[1]: Leaving directory '/workspaces/DS-2002-F25/pokemon_lab'
+make[1]: Leaving directory '/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab'
 Starting full production Pokémon TCG data pipeline...
 Step 1: Running ETL process (update_portfolio)...
-Traceback (most recent call last):
-  File "/workspaces/DS-2002-F25/pokemon_lab/./pipeline.py", line 18, in <module>
-    run_production_pipeline()
-  File "/workspaces/DS-2002-F25/pokemon_lab/./pipeline.py", line 9, in run_production_pipeline
-    update_portfolio.main()
-  File "/workspaces/DS-2002-F25/pokemon_lab/update_portfolio.py", line 113, in main
-    update_portfolio("./card_inventory/", "./card_set_lookup/", "card_portfolio.csv")
-  File "/workspaces/DS-2002-F25/pokemon_lab/update_portfolio.py", line 108, in update_portfolio
-    merged_df[final_cols].to_csv(output_file, index=False)
-    ~~~~~~~~~^^^^^^^^^^^^
-  File "/home/codespace/.local/lib/python3.12/site-packages/pandas/core/frame.py", line 4113, in __getitem__
-    indexer = self.columns._get_indexer_strict(key, "columns")[1]
- 
+Portfolio successfully updated: card_portfolio.csv
+Step 2: Running reporting process (generate_summary)...
+
+=== Pokémon TCG Portfolio Summary ===
+Total Portfolio Value: $5,686.24
+
+Most Valuable Card:
+  Name:  Charizard
+  ID:    base1-4
+  Value: $458.29
+=====================================
+
+Production pipeline complete.

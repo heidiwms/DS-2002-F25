@@ -7,39 +7,57 @@ def _load_lookup_data(lookup_dir):
     all_lookup_df = []
 
     for file in os.listdir(lookup_dir):
-        if file.endswith(".json"):
-            filepath = os.path.join(lookup_dir, file)
+        if not file.endswith(".json"):
+            continue
+        filepath = os.path.join(lookup_dir, file)
+
+        # Load JSON (skip empty/invalid); accept {"data":[...]} or top-level list
+        try:
             with open(filepath, "r", encoding="utf-8") as f:
-                data = json.load(f)
+                raw = f.read().strip()
+            if not raw:
+                continue
+            data = json.loads(raw)
+        except Exception:
+            continue
 
-            df = pd.json_normalize(data["data"])
+        records = data["data"] if isinstance(data, dict) and "data" in data else data
+        if not isinstance(records, list) or not records:
+            continue
 
-            df["card_market_value"] = (
-                df.get("tcgplayer.prices.holofoil.market", 0.0)
-                .fillna(df.get("tcgplayer.prices.normal.market", 0.0))
-                .fillna(0.0)
-            )
+        # Flatten with dotted keys so set.id/set.name are present
+        df = pd.json_normalize(records, sep=".")
 
-            df = df.rename(
-                columns={
-                    "id": "card_id",
-                    "name": "card_name",
-                    "number": "card_number",
-                    "set.id": "set_id",
-                    "set.name": "set_name",
-                }
-            )
+        # Robust market value selection
+        s1 = df.get("tcgplayer.prices.holofoil.market", pd.Series(0.0, index=df.index))
+        s2 = df.get("tcgplayer.prices.normal.market",   pd.Series(0.0, index=df.index))
+        df["card_market_value"] = s1.fillna(s2).fillna(0.0)
 
-            required_cols = [
-                "card_id",
-                "card_name",
-                "card_number",
-                "set_id",
-                "set_name",
-                "card_market_value",
-            ]
+        # Rename to canonical column names
+        df = df.rename(
+            columns={
+                "id": "card_id",
+                "name": "card_name",
+                "number": "card_number",
+                "set.id": "set_id",
+                "set.name": "set_name",
+            }
+        )
 
-            all_lookup_df.append(df[required_cols].copy())
+        # Ensure required columns exist
+        for col in ["card_id", "card_name", "card_number", "set_id", "set_name", "card_market_value"]:
+            if col not in df.columns:
+                df[col] = pd.NA if col != "card_market_value" else 0.0
+
+        required_cols = [
+            "card_id",
+            "card_name",
+            "card_number",
+            "set_id",
+            "set_name",
+            "card_market_value",
+        ]
+        all_lookup_df.append(df[required_cols].copy())
 
     if not all_lookup_df:
         return pd.DataFrame(columns=[
@@ -54,7 +72,6 @@ def _load_lookup_data(lookup_dir):
 
 def _load_inventory_data(inventory_dir):
     inventory_data = []
-
     for file in os.listdir(inventory_dir):
         if file.endswith(".csv"):
             filepath = os.path.join(inventory_dir, file)
@@ -84,15 +101,33 @@ def update_portfolio(inventory_dir, lookup_dir, output_file):
         pd.DataFrame(columns=empty_cols).to_csv(output_file, index=False)
         return
 
+    # Avoid name collisions; keep lookup names plain
+    left_cols = [c for c in inventory_df.columns if c not in ("card_name", "set_name")]
     merged_df = pd.merge(
-        inventory_df,
+        inventory_df[left_cols],
         lookup_df[["card_id", "card_name", "set_name", "card_market_value"]],
         on="card_id",
-        how="left"
+        how="left",
+        suffixes=("_inv", "")
     )
 
-    merged_df["card_market_value"] = merged_df["card_market_value"].fillna(0.0)
-    merged_df["set_name"] = merged_df["set_name"].fillna("NOT_FOUND")
+    # Helper to always return a Series (never None)
+    def s(df, col, default=pd.NA):
+        return df[col] if col in df.columns else pd.Series(default, index=df.index)
+
+    merged_df["card_name"] = (
+        s(merged_df, "card_name")
+        .combine_first(s(merged_df, "card_name_inv"))
+        .fillna("NOT_FOUND")
+    )
+
+    merged_df["set_name"] = (
+        s(merged_df, "set_name")
+        .combine_first(s(merged_df, "set_name_inv"))
+        .fillna("NOT_FOUND")
+    )
+
+    merged_df["card_market_value"] = s(merged_df, "card_market_value", 0.0).fillna(0.0)
 
     merged_df["index"] = (
         merged_df["binder_name"].astype(str) + "-" +
