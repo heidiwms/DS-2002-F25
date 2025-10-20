@@ -12,4 +12,3 @@ for FILE in card_set_lookup/*.json; do
 done
 
 echo "All card sets have been refreshed."
-
