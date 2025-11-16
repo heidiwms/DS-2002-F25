@@ -1,0 +1,551 @@
+<!unkinOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>dunkin-donuts-logo | Dunkin&#39;</title>
+
+  <meta name="description" content="">
+  
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:title" content="File">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dunkin&#39;">
+  <meta property="og:url" content="https://news.dunkindonuts.com/file">
+  <meta property="og:description" content="">
+  
+
+  
+  <meta name="msvalidate.01" content="A0FE6B356487605715B8E97E74E7C656" />
+  <meta name="google-site-verification" content="5FMQ26TYpO5cRF30w3Qxa1wtx7Q5R1ITDuumC64qm88" />
+
+  <link rel="apple-touch-icon-precomposed" href="/media/sites/285/images/itouch.png" />
+  <link rel="alternate" type="application/rss+xml" title="Infographics" href="https://news.dunkindonuts.com/infographics.xml" >
+  <link rel="shortcut icon" href="/media/sites/285/images/favicon.ico" type="image/x-icon" />
+  
+
+  <!--[if lt IE 9]>
+  <script src="/media/themes/638531a8b3aed3201b2014ff/js/html5shiv.js"></script>
+  <script src="/media/themes/638531a8b3aed3201b2014ff/js/respond.js"></script>
+  <![endif]-->
+
+  
+  <link rel="stylesheet" type="text/css" href="/media/themes/638531a8b3aed3201b2014ff/css/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css" href="/media/themes/638531a8b3aed3201b2014ff/css/style.css?ver=2023-06-08" />
+  <link rel="stylesheet" type="text/css" href="/media/themes/638531a8b3aed3201b2014ff/css/simplebox.css?ver=2021-08-27" />
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NKVXS88');</script>
+<!-- End Google Tag Manager -->
+  <script type="text/javascript" src="/static/flowplayer/flowplayer-3.2.8.min.js"></script>
+  <script type="text/javascript" src="/static/js/media_player.js"></script>
+  <script type="text/javascript" src="/static/flowplayer/videosubtitles.js"></script>
+
+  <script src="/media/themes/638531a8b3aed3201b2014ff/js/jquery-2.1.1.min.js" type="text/javascript"></script>
+  
+
+  
+  
+
+  <!-- Google tag (gtag.js) -->
+  <script type="text/javascript" src="/static/js/jquery.cookie.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZ294KK3V0"></script>
+  
+  <script>
+  
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+
+    var check_site_id = 285;
+
+    
+
+    gtag('js', new Date());
+
+    
+      gtag('config', 'G-JZ294KK3V0');
+    
+
+    var measurement_id = 'G-JZ294KK3V0';
+
+    var gcid = '';
+
+    const sessionIdPromise =  new  Promise(resolve => {
+        gtag('get', 'G-JZ294KK3V0', 'session_id', resolve)
+    });
+    const sessionNumPromise =  new  Promise(resolve => {
+        gtag('get', 'G-JZ294KK3V0', 'session_number', resolve)
+    });
+    const clientID =  new  Promise(resolve => {
+        gtag('get', 'G-JZ294KK3V0', 'client_id', resolve)
+    });
+
+    var ga_four_event = function(type,title,id){
+        try {
+                
+                    gtag('event',type, {
+                                'event_category':type,
+                                'event_action' :title, 
+                                'event_label' :id,
+                                'event_type' : 'frontend',
+                                'client_identity':gcid,
+                                'send_to': measurement_id 
+                          });
+                
+        }
+        catch(e) {
+
+        }
+    }
+
+    function ga_event(type, title, id) {
+      console.warn("DEPRECATED: The function 'ga_event' was called but is no longer supported.", { type: type, title: title, id: id });
+    }
+
+    function ga_social_event(network, action, target) {
+      console.warn("DEPRECATED: The function 'ga_social_event' was called but is no longer supported.", { network: network, action: action, target: target });
+    }
+
+    Promise.all([sessionIdPromise, sessionNumPromise, clientID]).then(function(session_data) {
+
+            gcid = session_data[2]
+            
+            
+
+            gtag('set', 'user_properties', {'client_identity':session_data[2]});
+
+            
+                  var c_group1 = 'empty';
+            
+
+            if(jQuery(".ipr_ga_mixed_gallery_page_flag").length > 0)
+            {
+                 var c_group2 = 'mixed_gallery';
+            }
+            else
+            {
+                 var c_group2 = 'empty';
+            }
+
+            
+                 var c_group4 = '56a6ecf05e8eef3029891731';
+            
+
+
+            
+                    var c_group3 = 'empty';
+            
+
+
+            gtag('event', 'content_group', { //general tracking for content groups
+                     'content_group1':c_group1,
+                     'content_group2':c_group2,
+                     'content_group3':c_group3,
+                     'content_group4':c_group4,
+                     'event_type' : 'frontend',
+                     'client_identity':gcid,
+                     
+                     'send_to': measurement_id
+            });
+
+            
+
+            
+
+            
+
+            
+                      ga_four_event('PublishDate','View','May 21, 2012');
+            
+
+            
+
+            
+
+            
+
+            
+
+            var ga_referrer = document.referrer;
+                if(ga_referrer != "" && ga_referrer.indexOf('?q') >=0){
+                  var qs = ga_referrer.split('?q=')[1] || '';
+                  var final_qs = qs.split('&')[0]
+                  
+                    ga_four_event('Search',final_qs,'/file');
+                    //alert("send");
+                  
+            }
+
+    });
+
+    var social_patterns = ['facebook.com/share','twitter.com/share','linkedin.com/share','pinterest.com/share','mailto:?subject'];
+
+    jQuery( document ).ready(function(){
+
+        try {
+            jQuery(".mixed_gallery_low_res_download, .mixed_gallery_hi_res_download").click(function(){
+                   ga_four_event('mixed_gallery_download',jQuery(this).attr('title'),jQuery(this).attr('data-ipr-ga'));
+            });
+        }
+        catch(e){
+
+        }
+
+        try {
+            jQuery(".ga-fileview").click(function(){
+              page_id = "56a6ecf05e8eef3029891731";
+              user_id = "";
+              if(user_id == ""){user_id='ANONYMOUS'}
+              track_event_label = page_id+"_"+user_id;
+                 ga_four_event('fileView',jQuery(this).attr('data-ipr-ga'),track_event_label);
+            });
+        }
+        catch(e){
+
+        }
+
+        try {
+            jQuery('a').click(function(){
+                if(jQuery(this).attr("href") != '' || jQuery(this).attr("href").startsWith("#")){
+
+                    var href = jQuery(this).attr("href")
+
+                    var ismatched = false
+
+                    var social_action = "notset"
+
+                    ga_four_event('linkClick',jQuery(this).attr("href"),jQuery(this).text());
+                    
+                    for (const pattern of social_patterns) {
+                        if(href.includes(pattern)) {
+                          ismatched = true
+                          if(pattern.includes("facebook")){
+                            social_action = "facebook";
+                          }
+                          else if(pattern.includes("twitter")){
+                            social_action = "twitter";
+                          }
+                          else if(pattern.includes("linkedin")){
+                            social_action = "linkedin";
+                          }
+                          else if(pattern.includes("pinterest")){
+                            social_action = "pinterest";
+                          }
+                          else if(pattern.includes("mailto")){
+                            social_action = "email";
+                          }
+                          break;
+                        }
+                    }
+
+                    if(ismatched){
+                        ga_four_event('social',social_action,'https://news.dunkindonuts.com/file');
+                    }
+
+                }
+
+            });
+        }
+        catch(e){
+
+        }
+    });
+
+
+    var audio_view = function(file_id){
+          page_id = "56a6ecf05e8eef3029891731";
+          user_id = "";
+          if(user_id == ""){user_id='ANONYMOUS'}
+          track_event_label = page_id+"_"+user_id;
+          ga_four_event('fileView',file_id,track_event_label);
+          }
+
+    var file_view = function(file_id){
+          page_id = "56a6ecf05e8eef3029891731";
+          user_id = "";
+          if(user_id == "")
+          {
+            
+               user_id='ANONYMOUS'
+            
+          }
+          track_event_label = page_id+"_"+user_id;
+          ga_four_event('fileView',file_id,track_event_label);
+          
+          }
+
+    var video_view = function(file_id){
+          page_id = "56a6ecf05e8eef3029891731";
+          user_id = "";
+          if(user_id == ""){user_id='ANONYMOUS'}
+          track_event_label = page_id+"_"+user_id;
+          ga_four_event('fileView',file_id,track_event_label);
+          }
+
+    $(window).on("load", function() {
+
+          if($('video').length){
+             $('video').each(function(){
+                if( $(this).attr('data-fileid') != undefined || $(this).attr('data-fileid') != '')
+                { 
+                 file_view($(this).attr('data-fileid'))
+                }
+                else if($(this).closest('.cb-video'))
+                { 
+                 if($(this).closest('.cb-video').dataset.filesourceid != undefined)
+                 {file_view($(this).closest('.cb-video').dataset.filesourceid)}    
+                }
+             });
+          }
+
+          if($('iframe').length){
+            $('iframe').each(function(){
+                if($(this).contents().find('video').length){
+                    if( $(this).contents().find('video').attr('data-fileid') != undefined || $(this).contents().find('video').attr('data-fileid') != '')
+                    { 
+                     file_view($(this).contents().find('video').attr('data-fileid'))
+                    }
+                }
+            });
+          }
+
+    });
+
+  </script>
+
+
+
+
+  
+  
+
+  
+
+
+  
+  
+
+  
+     
+     <link href="/static/contentbuilder/contentbuilder-content.css" rel="stylesheet" type="text/css" />
+      
+     
+
+
+</head>
+
+<body class="">
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKVXS88" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<noscript>
+  <div class="noscript-message">
+    This site requires Javascript in order to view all its features. Please enable Javascript in order to access all the functionality of this web site. Here are the <a target="_blank" href="http://www.enable-javascript.com/">instructions how to enable JavaScript in your web browser</a>.
+  </div>
+</noscript>
+
+<div class="header" role="banner">
+  <div class="header-links">
+    
+    <div class="container">
+      
+      
+      <div class="header-links-item">
+        <a href="/alerts">Sign up for Email Alerts</a>
+      </div>
+      
+    </div>
+  </div>
+  <div class="header-row">
+    <div class="container">
+      
+      <div class="header-row-logo">
+        <a href="/">
+          <img src="/media/themes/638531a8b3aed3201b2014ff/fonts/dunkin-logo-white.svg" alt="Dunkin&#39;" />
+          <span>Newsroom</span>
+        </a>
+      </div>
+      
+      
+        
+
+<nav class="header-row-nav" role="navigation">
+  <h3 class='hidden'>Main Navigaton Menu</h3>
+  <span class="menu-link visible-xs visible-sm"><i class="fa fa-bars fa-3x"></i></span>
+    
+<ul class="menu-list indent0 hidden-sm hidden-xs">
+    <li class=" ">
+      <a href="/news" >News</a></li>
+    <li class=" ">
+      <a href="/blog" >Blog</a></li>
+    <li class=" ">
+      <a href="/contacts" >Contacts</a></li>
+</ul>
+
+</nav>
+
+      
+      
+      <div class="header-row-search" role="search">
+        <form method="get" action="/search">
+          <input type="text" name="q" placeholder="Search Newsroom" value="" class="form-control" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      
+    
+    </div>
+  </div>
+</div>
+<div class="content">
+  
+  <div class="container">
+  
+    <div class="content-main" role="main">
+      
+
+<h1>dunkin-donuts-logo</h1>
+<div class="media-main ePlayer">
+
+	
+  <img src="https://s3.amazonaws.com/cms.ipressroom.com/285/files/20160/56aacfbd5e8eef63bda1c458_dunkin-donuts-logo/dunkin-donuts-logo_a13ef105-9564-4350-a786-4b27262de56a-prv.jpg" alt="dunkin-donuts-logo" title="dunkin-donuts-logo">
+ 
+
+</div>
+
+
+
+<div class="addthis_sharing_toolbox"></div>
+
+
+<div class="media-downloads">
+	<h3>Download</h3>
+    <ul>
+    	<li><a href="/_gallery/get_file/?file_id=56aacfbd5e8eef63bda1c458&amp;file_ext=.jpg&amp;page_id=56a6ecf05e8eef3029891731" target="_blank">Original (203.1 kB)</a></li>
+        
+        <li><a href="https://s3.amazonaws.com/cms.ipressroom.com/285/files/20160/56aacfbd5e8eef63bda1c458_dunkin-donuts-logo/dunkin-donuts-logo_a13ef105-9564-4350-a786-4b27262de56a-prv.jpg" target="_blank">Large (800px wide)</a></li>
+        <li><a href="https://s3.amazonaws.com/cms.ipressroom.com/285/files/20160/56aacfbd5e8eef63bda1c458_dunkin-donuts-logo/dunkin-donuts-logo_mid.jpg" target="_blank">Medium (500px wide)</a></li>
+        <li><a href="https://s3.amazonaws.com/cms.ipressroom.com/285/files/20160/56aacfbd5e8eef63bda1c458_dunkin-donuts-logo/dunkin-donuts-logo_thmb.jpg" target="_blank">Small (320px wide)</a></li>
+        <li><a href="https://s3.amazonaws.com/cms.ipressroom.com/285/files/20160/56aacfbd5e8eef63bda1c458_dunkin-donuts-logo/dunkin-donuts-logo_s.jpg" target="_blank">Thumbnail (100px wide)</a></li>
+        
+    </ul>
+</div>
+
+
+
+
+
+    </div>
+    <div class="content-aside" role="complementary">
+      
+      
+    </div>
+  
+  </div>
+</div>
+<div class="footer" role="contentinfo">
+  <div class="container">
+    <div class="row">
+    
+      <div class="footer-logo col-xs-12 col-sm-3">
+        <a href="/"><img src="/media/themes/638531a8b3aed3201b2014ff/fonts/dunkin-logo-color-outline.svg" alt="Dunkin&#39;" /></a>
+      </div>
+      
+
+
+
+<nav class="footer-nav col-xs-12 col-sm-9">
+  <h3 class="hidden">Footer Navigation Links</h3>
+  <div class="footer-nav-block col-xs-12 col-sm-4">
+  
+	  <a title="Dunkin&#39; Home" href="http://www.dunkindonuts.com/" class="footer-nav-block-item">Dunkin&#39; Home</a>
+    
+  
+	  <a title="Company Facts" href="/about" class="footer-nav-block-item">Company Facts</a>
+    
+  
+	  <a title="Media Contacts" href="/contacts" class="footer-nav-block-item">Media Contacts</a>
+    </div><div class="footer-nav-block col-xs-12 col-sm-4">
+  
+	  <a title="Foundation" href="https://www.joyinchildhoodfoundation.org/" class="footer-nav-block-item">Foundation</a>
+    
+  
+  
+
+<div class="footer-nav-block-social">
+  <h2 class="sr-only">Site Footer: Social Media</h2>
+  
+	<a title="Facebook" href="https://www.facebook.com/DunkinUS/" class="socialLink-item" target="_blank">
+    <span class="sr-only">Facebook</span>
+    <i class="fa fa-facebook"></i>
+  </a>
+  
+	<a title="Twitter" href="https://twitter.com/dunkindonuts" class="socialLink-item" target="_blank">
+    <span class="sr-only">Twitter</span>
+    <i class="fa fa-twitter"></i>
+  </a>
+  
+	<a title="YouTube" href="https://www.youtube.com/user/dunkindonuts" class="socialLink-item" target="_blank">
+    <span class="sr-only">YouTube</span>
+    <i class="fa fa-youtube"></i>
+  </a>
+  
+	<a title="Instagram" href="https://www.instagram.com/dunkin/" class="socialLink-item" target="_blank">
+    <span class="sr-only">Instagram</span>
+    <i class="fa fa-instagram"></i>
+  </a>
+  
+	<a title="Pinterest" href="https://www.pinterest.com/DunkinDonuts/" class="socialLink-item" target="_blank">
+    <span class="sr-only">Pinterest</span>
+    <i class="fa fa-pinterest"></i>
+  </a>
+  
+</div>
+
+  </div>
+</nav>
+
+    
+    </div>
+  </div>
+</div>
+<div class="footerText">
+  <div class="container">
+    <div class="footer-text">
+      
+
+
+ 
+   © 2025. DD IP Holder LLC and BR IP Holder LLC. All rights reserved. The Dunkin' and Baskin-Robbins trademarks,trade names, designs, logos, service marks, and related marks are registered trademarks of DD IP Holder LLC and BR IP Holder LLC, respectively.<br />
+<a href="/policy">Privacy Policy</a> | <a href="/terms">Terms of Use</a>
+ 
+
+    </div>
+  </div>
+</div>
+
+  <script src="/media/themes/638531a8b3aed3201b2014ff/js/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="/media/themes/638531a8b3aed3201b2014ff/js/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <script src="/media/themes/638531a8b3aed3201b2014ff/js/equalize.js" type="text/javascript"></script>
+  <script src="/media/themes/638531a8b3aed3201b2014ff/js/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="/media/themes/638531a8b3aed3201b2014ff/js/common.js" type="text/javascript"></script>
+
+
+<script src="/static/js/jquery.js" type="text/javascript"></script>
+<script src="/static/js/jquery.tmpl.js" type="text/javascript"></script>
+   <script type="text/javascript" src="/static/flowplayer/flowplayer-3.2.8.min.js"></script>
+   <script type="text/javascript" src="/static/js/media_player.js"></script>
+   <script type="text/javascript" src="/static/flowplayer/videosubtitles.js"></script>
+
+</body>
+</html>
